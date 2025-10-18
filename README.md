@@ -12,19 +12,26 @@ The **complete project documentation** and the theoretical foundation are availa
 
  ## 💻 Project Structure and Experimental Code
 
-All code logic, methodology, and implementation details are thoroughly explained in the **Appendix** of the final report.
-
+All code logic and implementation details are thoroughly explained in the **Appendix** of the final report.
 * **[Appendix:Python code](report/TFGFINAL.pdf)**
+* 
+The **Appendix** covers:
+* The required **external libraries** and environment setup.
+* The exact **generation method** for the test dataset (e.g., the torus).
+* The **general topological filtering algorithm** (applicable to any dimension).
+* The **analysis and comparison** of the final results.
+* The **visualization** process for the filtered point clouds.
 
-* **[Complete TFG Report: Topological Data Analysis for Dataset Refinement](report/TFGFINAL.pdf)**
-The source code used for the experimental section of the thesis resides in the **`/src`** folder and is divided into 4 main modules covering the process end-to-end:
 
-| File in `/src` | Functional Purpose |
+The source code used for the experimental section of the thesis resides in the **`/src`** folder and is composed of several scripts that implement the analysis phases.
+
+| File in `/src` | Purpose and Included Algorithms |
 | :--- | :--- |
-| `data_generation.py` | Creation of the synthetic point cloud (e.g., the torus) or loading of the initial dataset. |
-| `persistent_homology.py` | Implementation of Algebraic Topology tools, calculation of Persistent Homology and the Persistence Diagram. |
-| `filtering_algorithm.py` | Implementation of the data refinement logic based on topological impact and Bottleneck Distance. |
-| `visualization_3d.py` | Scripts for 3D visualization of the original point cloud and the filtered dataset (before/after). |
+| `base_pipeline.py` | **Base Pipeline:** Contains **Test Data Generation**, initial **Visualization**, and **Persistence Diagram Calculation** for general analysis. It's also included in next scripts |
+| `filtering_dim0.py` | **TFG - Dimension 0:** Complete filtering pipeline and quantitative analysis through Bottleneck Distance for **Dimension 0** persistent homology. |
+| `filtering_dim1.py` | **TFG - Dimension 1:** Complete filtering pipeline and quantitative analysis through Bottleneck Distance for **Dimension 0 and 1** persistent homology. |
+| `filtering_dim2.py` | **TFG - Dimension 2:** Complete filtering pipeline and quantitative analysis through Bottleneck Distance for **Dimension 0,1 and 2** persistent homology. |
+| `sequential_filter_advanced.py` | **High-Cost Advanced Algorithm (EXTRA):** Implements the **point-by-point** sequential filtering method (re-evaluating the set after each removal). Achieves **better results** than the TFG's batch method, but at an **exponentially higher computational cost and time**. |
 
 ---
 
@@ -46,6 +53,16 @@ python -m venv .venv
 # (Ensure you create this requirements.txt file with all necessary libraries)
 pip install -r requirements.txt
 
+```
+
+### 2. Usage
+
+```bash
+python src/base_pipeline.py
+python src/filtering_dim0.py
+python src/filtering_dim0.py
+python src/filtering_dim0.py
+python src/sequential_filter_advanced.py
 ```
 
 ## 🎓 Authorship and Supervision
