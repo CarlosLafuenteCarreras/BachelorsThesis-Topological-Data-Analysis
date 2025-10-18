@@ -14,7 +14,7 @@ The **complete project documentation** and the theoretical foundation are availa
 
 All code logic and implementation details are thoroughly explained in the **Appendix** of the final report.
 * **[Appendix:Python code](report/TFGFINAL.pdf)**
-* 
+
 The **Appendix** covers:
 * The required **external libraries** and environment setup.
 * The exact **generation method** for the test dataset (e.g., the torus).
