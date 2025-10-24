@@ -28,9 +28,10 @@ The source code used for the experimental section of the thesis resides in the *
 | File in `/src` | Purpose and Included Algorithms |
 | :--- | :--- |
 | `base_pipeline.py` | **Base Pipeline:** Contains **Test Data Generation**, initial **Visualization**, and **Persistence Diagram Calculation** for general analysis. It's also included in next scripts |
-| `filtering_dim0.py` | **TFG - Dimension 0:** Complete filtering pipeline and quantitative analysis through Bottleneck Distance for **Dimension 0** persistent homology. |
-| `filtering_dim1.py` | **TFG - Dimension 1:** Complete filtering pipeline and quantitative analysis through Bottleneck Distance for **Dimension 0 and 1** persistent homology. |
-| `filtering_dim2.py` | **TFG - Dimension 2:** Complete filtering pipeline and quantitative analysis through Bottleneck Distance for **Dimension 0,1 and 2** persistent homology. |
+| `filter_h0.py` | **TFG - Dimension 0:** Complete filtering pipeline and quantitative analysis through Bottleneck Distance for **Dimension 0** persistent homology. |
+| `filter_h1.py` | **TFG - Dimension 1:** Complete filtering pipeline and quantitative analysis through Bottleneck Distance for **Dimension 1** persistent homology. |
+| `filter_h2.py` | **TFG - Dimension 2:** Complete filtering pipeline and quantitative analysis through Bottleneck Distance for **Dimension 2** persistent homology. |
+| `filter_h1h2.py` | **TFG - Dimension 1 and 2:** Complete filtering pipeline and quantitative analysis through Bottleneck Distance for **both 1 and 2 Dimensions** persistent homology. |
 | `sequential_filter_advanced.py` | **High-Cost Advanced Algorithm (EXTRA):** Implements the **point-by-point** sequential filtering method (re-evaluating the set after each removal). Achieves **better results** than the TFG's batch method, but at an **exponentially higher computational cost and time**. |
 
 ---
@@ -59,9 +60,10 @@ pip install -r requirements.txt
 
 ```bash
 python src/base_pipeline.py
-python src/filtering_dim0.py
-python src/filtering_dim0.py
-python src/filtering_dim0.py
+python src/filter_h0.py
+python src/filter_h1.py
+python src/filter_h2.py
+python src/filter_h1h2.py
 python src/sequential_filter_advanced.py
 ```
 
