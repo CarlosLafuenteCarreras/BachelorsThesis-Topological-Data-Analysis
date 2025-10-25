@@ -1,26 +1,24 @@
 # Bachelor's Thesis: Topological Data Analysis for Dataset Refinement
 Bachelor's Thesis (TFG): Topological Data Analysis (TDA) for Dataset Refinement. Applies computational tools from Algebraic Topology to remove noise and redundancies in Point Clouds while preserving the fundamental topological features. Includes self-developed algorithm, along with Python code for its experimental validation.
 <br>
-<p align="center">
-  <img src="img/gif1.gif" alt="Visualización Calculo Barcode" width="50%">
+<br>
+<p align="left">
+  <img src="img/gif1.gif" alt="Visualización Calculo Barcode" width="60%">
 </p>
 <br>
+
 ## 📄 Final Report and Theoretical Basis (Documentation)
 
 The **complete project documentation** and the theoretical foundation are available in the final report, which details the construction of Simplicial Homology, concepts of Topological Data Analysis such as Persistente Homology and Bottleneck Distance, and the algorithm description and explanation for topological filtering applied, along with its experimental validation and conclusions.
 
 * **[Complete TFG Report: Topological Data Analysis for Dataset Refinement](report/MEMORIA.pdf)**
     * This document serves as the academic and theoretical foundation for the code.
-
 <br>
-<p align="center">
-  <img src="img/puntosh_1y2.png" alt="Visualización del Toro Filtrado y Ciclos H1 y H2" width="80%">
+<br>
+<p align="left">
+  <img src="img/puntosh_1y2.png" alt="Visualización del Toro Filtrado y Ciclos H1 y H2" width="70%">
 </p>
 <br>
-
-| Resultado filtrado del Toroide  | Visualización del cálculo de Barcode |
-| :---: | :---: |
-| <p align="center"><img src="img/puntosh_1y2.png" alt="Nube de Puntos Original con Ruido" width="100%"></p> | <p align="center"><img src="img/gif1.gif" alt="Nube de Puntos Filtrada por TDA" width="70%"></p> |
 
  ## 💻 Project Structure and Experimental Code
 
