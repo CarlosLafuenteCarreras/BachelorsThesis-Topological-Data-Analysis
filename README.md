@@ -5,7 +5,7 @@ Bachelor's Thesis (TFG): Topological Data Analysis (TDA) for Dataset Refinement.
 
 The **complete project documentation** and the theoretical foundation are available in the final report, which details the construction of Simplicial Homology, concepts of Topological Data Analysis such as Persistente Homology and Bottleneck Distance, and the algorithm description and explanation for topological filtering applied, along with its experimental validation and conclusions.
 
-* **[Complete TFG Report: Topological Data Analysis for Dataset Refinement](report/TFGFINAL.pdf)**
+* **[Complete TFG Report: Topological Data Analysis for Dataset Refinement](report/MEMORIA.pdf)**
     * This document serves as the academic and theoretical foundation for the code.
 
 ---
@@ -13,7 +13,7 @@ The **complete project documentation** and the theoretical foundation are availa
  ## 💻 Project Structure and Experimental Code
 
 All code logic and implementation details are thoroughly explained in the **Appendix** of the final report.
-* **[Appendix:Python code](report/TFGFINAL.pdf)**
+* **[Appendix: Python code](report/APENDICE TFG.pdf)**
 
 The **Appendix** covers:
 * The required **external libraries** and environment setup.
