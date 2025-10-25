@@ -3,7 +3,7 @@ Bachelor's Thesis (TFG): Topological Data Analysis (TDA) for Dataset Refinement.
 <br>
 <br>
 <p align="left">
-  <img src="img/gif1.gif" alt="Visualización Calculo Barcode" width="60%">
+  <img src="img/gif1.gif" alt="Visualización Calculo Barcode" width="100%">
 </p>
 <br>
 
@@ -16,7 +16,7 @@ The **complete project documentation** and the theoretical foundation are availa
 <br>
 <br>
 <p align="left">
-  <img src="img/puntosh_1y2.png" alt="Visualización del Toro Filtrado y Ciclos H1 y H2" width="70%">
+  <img src="img/puntosh_1y2.png" alt="Visualización del Toro Filtrado y Ciclos H1 y H2" width="100%">
 </p>
 <br>
 
